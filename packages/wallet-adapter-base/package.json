@@ -30,8 +30,8 @@
     "postbuild": "echo '{\"type\":\"commonjs\"}' | node ../../node_modules/.bin/json > lib/cjs/package.json && echo '{\"type\":\"module\"} ' | node ../../node_modules/.bin/json > lib/esm/package.json"
   },
   "dependencies": {
-    "@dao-xyz/peerbit": "^0.0.36",
+    "@dao-xyz/peerbit-crypto": "^0.0.13",
     "eventemitter3": "^4.0.0"
   },
-  "gitHead": "6a5b4fb9dac3ef553d36fe02774b9fadccc81b05"
+  "gitHead": "0d2127419555412027e32c986c33cb0f6779b374"
 }

@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "packages/*",
+    "packages/wallets/*",
+    "packages/frontend",
+    "packages/library"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

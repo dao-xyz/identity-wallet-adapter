@@ -1,0 +1,39 @@
+{
+    "name": "@dao-xyz/wallet-adapter-metamask",
+    "version": "0.0.1",
+    "author": "day.xyz",
+    "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
+    "license": "Apache-2.0",
+    "type": "module",
+    "sideEffects": false,
+    "main": "lib/cjs/index.js",
+    "module": "lib/esm/index.mjs",
+    "types": "lib/types/index.d.ts",
+    "exports": {
+        "import": "./lib/esm/index.mjs",
+        "require": "./lib/cjs/index.js"
+    },
+    "files": [
+        "lib",
+        "src",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "shx rm -rf lib/*",
+        "build": "yarn clean && tsc -p tsconfig.json && tsc-esm -p tsconfig.json && tsc -p tsconfig.cjs.json",
+        "postbuild": "echo '{\"type\":\"commonjs\"}' | node ../../../node_modules/.bin/json > lib/cjs/package.json && echo '{\"type\":\"module\"} ' | node ../../../node_modules/.bin/json > lib/esm/package.json"
+    },
+    "peerDependencies": {
+        "ethers": "^5.6.8"
+    },
+    "dependencies": {
+        "@dao-xyz/wallet-adapter-base": "^0.0.1",
+        "@dao-xyz/peerbit": "^0.0.36"
+    },
+    "devDependencies": {
+        "ethers": "^5.6.8"
+    }
+}

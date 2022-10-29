@@ -1,6 +1,6 @@
 {
   "name": "@dao-xyz/wallet-adapter-material-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "dao.xyz",
   "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
   "license": "Apache-2.0",
@@ -32,8 +32,8 @@
     "react-dom": "*"
   },
   "dependencies": {
-    "@dao-xyz/wallet-adapter-base": "^0.0.2",
-    "@dao-xyz/wallet-adapter-react": "^0.0.2",
+    "@dao-xyz/wallet-adapter-base": "^0.0.3",
+    "@dao-xyz/wallet-adapter-react": "^0.0.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.4"
   },

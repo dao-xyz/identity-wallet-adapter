@@ -1,6 +1,6 @@
 {
   "name": "@dao-xyz/wallet-adapter-phantom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "dao.xyz",
   "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
   "license": "Apache-2.0",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@dao-xyz/peerbit-crypto": "^0.0.13",
-    "@dao-xyz/wallet-adapter-base": "^0.0.2"
+    "@dao-xyz/wallet-adapter-base": "^0.0.3"
   },
   "devDependencies": {
     "@solana/web3.js": "^1.44.3"

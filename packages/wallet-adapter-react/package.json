@@ -1,6 +1,6 @@
 {
   "name": "@dao-xyz/wallet-adapter-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "dao.xyz",
   "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
   "license": "Apache-2.0",
@@ -34,7 +34,7 @@
     "react": "*"
   },
   "dependencies": {
-    "@dao-xyz/wallet-adapter-base": "^0.0.3"
+    "@dao-xyz/wallet-adapter-base": "^0.0.4"
   },
   "gitHead": "0d2127419555412027e32c986c33cb0f6779b374"
 }

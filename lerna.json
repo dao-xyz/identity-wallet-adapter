@@ -1,9 +1,7 @@
 {
   "packages": [
     "packages/*",
-    "packages/wallets/*",
-    "packages/frontend",
-    "packages/library"
+    "packages/wallets/*"
   ],
   "version": "independent",
   "npmClient": "yarn",

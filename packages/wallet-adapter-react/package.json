@@ -35,5 +35,6 @@
   },
   "dependencies": {
     "@dao-xyz/wallet-adapter-base": "^0.0.2"
-  }
+  },
+  "gitHead": "6a5b4fb9dac3ef553d36fe02774b9fadccc81b05"
 }

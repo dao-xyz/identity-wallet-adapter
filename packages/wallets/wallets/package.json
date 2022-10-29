@@ -29,5 +29,6 @@
   "dependencies": {
     "@dao-xyz/wallet-adapter-metamask": "^0.0.2",
     "@dao-xyz/wallet-adapter-phantom": "^0.0.2"
-  }
+  },
+  "gitHead": "6a5b4fb9dac3ef553d36fe02774b9fadccc81b05"
 }

@@ -82,6 +82,7 @@ export const WalletProvider: FC<WalletProviderProps> = ({
     // When the selected wallet changes, initialize the state
     useEffect(() => {
         const wallet = wallets.find(({ adapter }) => adapter.name === name);
+
         if (wallet) {
             setState({
                 wallet,
@@ -232,9 +233,9 @@ export const WalletProvider: FC<WalletProviderProps> = ({
         () =>
             adapter && 'signMessage' in adapter
                 ? async (message: Uint8Array): Promise<Uint8Array> => {
-                      if (!connected) throw handleError(new WalletNotConnectedError());
-                      return await adapter.signMessage(message);
-                  }
+                    if (!connected) throw handleError(new WalletNotConnectedError());
+                    return await adapter.signMessage(message);
+                }
                 : undefined,
         [adapter, handleError, connected]
     );

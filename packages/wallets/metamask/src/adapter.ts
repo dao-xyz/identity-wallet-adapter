@@ -12,6 +12,8 @@ import {
     WalletSignTransactionError,
 } from '@dao-xyz/wallet-adapter-base';
 
+import { delay } from '@dao-xyz/peerbit-time'
+
 import { Secp256k1PublicKey, PublicSignKey } from '@dao-xyz/peerbit-crypto';
 import { ethers } from 'ethers';
 import { Web3Provider } from '@ethersproject/providers';
@@ -104,7 +106,7 @@ export class MetaMaskWalletAdapter extends BaseMessageSignerWalletAdapter {
     }
 
     get publicKey(): PublicSignKey | null {
-        return this._wallet?.selectedAddress ? new Secp256k1PublicKey({address: this._wallet?.selectedAddress}) : null;
+        return this._wallet?.selectedAddress ? new Secp256k1PublicKey({ address: this._wallet?.selectedAddress }) : null;
     }
 
 
@@ -120,9 +122,8 @@ export class MetaMaskWalletAdapter extends BaseMessageSignerWalletAdapter {
         return this._readyState;
     }
 
-    get provider(): Web3Provider{
-        if(!this._provider)
-        {
+    get provider(): Web3Provider {
+        if (!this._provider) {
             throw new Error("Not initialized")
         }
         return this._provider;
@@ -141,9 +142,9 @@ export class MetaMaskWalletAdapter extends BaseMessageSignerWalletAdapter {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             const wallet = window!.ethereum!;
             const provider = new ethers.providers.Web3Provider(wallet)
-
             while (!await checkConnection(provider)) {
                 console.log('Waiting for connection to wallet');
+                await delay(500);
             }
             /*  console.log('CONNECT 2!', wallet, connected, wallet.isConnected());
  
@@ -202,12 +203,12 @@ export class MetaMaskWalletAdapter extends BaseMessageSignerWalletAdapter {
 
     async signMessage(message: Uint8Array): Promise<Uint8Array> {
         try {
-            const wallet = this._wallet;
-            if (!wallet) throw new WalletNotConnectedError();
+            const provider = this._provider;
+            if (!provider) throw new WalletNotConnectedError();
 
             try {
-                const { signature } = await wallet.signMessage(message);
-                return signature;
+                const signature = await provider.getSigner().signMessage(message);
+                return new Uint8Array(Buffer.from(signature));
             } catch (error: any) {
                 throw new WalletSignTransactionError(error?.message, error);
             }

@@ -29,8 +29,8 @@
     "build": "yarn clean && tsc -p tsconfig.json && tsc-esm -p tsconfig.json && tsc -p tsconfig.cjs.json",
     "postbuild": "echo '{\"type\":\"commonjs\"}' | node ../../node_modules/.bin/json > lib/cjs/package.json && echo '{\"type\":\"module\"} ' | node ../../node_modules/.bin/json > lib/esm/package.json"
   },
-  "dependencies": {
-    "@dao-xyz/peerbit-crypto": "^0.0.13",
+  "peerDependencies": {
+    "@dao-xyz/peerbit-crypto": "*",
     "eventemitter3": "^4.0.0"
   },
   "gitHead": "0d2127419555412027e32c986c33cb0f6779b374"

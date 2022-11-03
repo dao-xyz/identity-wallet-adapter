@@ -6,6 +6,8 @@
     "@dao-xyz/wallet-adapter-base": "^0.0.4",
     "@dao-xyz/wallet-adapter-material-ui": "^0.0.4",
     "@dao-xyz/wallet-adapter-react": "^0.0.4",
+    "@dao-xyz/wallet-adapter-metamask": "^0.0.4",
+    "@dao-xyz/wallet-adapter-phantom": "^0.0.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.8.2",

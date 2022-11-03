@@ -1,6 +1,6 @@
 {
   "name": "@dao-xyz/wallet-adapter-phantom",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "dao.xyz",
   "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
   "license": "Apache-2.0",
@@ -27,15 +27,15 @@
     "postbuild": "echo '{\"type\":\"commonjs\"}' | node ../../../node_modules/.bin/json > lib/cjs/package.json && echo '{\"type\":\"module\"} ' | node ../../../node_modules/.bin/json > lib/esm/package.json"
   },
   "peerDependencies": {
-    "@solana/web3.js": "^1.66.*",
-    "@dao-xyz/peerbit-crypto": "*"
+    "@dao-xyz/peerbit-crypto": "*",
+    "@solana/web3.js": "^1.66.*"
   },
   "dependencies": {
-    "@dao-xyz/wallet-adapter-base": "^0.0.4"
+    "@dao-xyz/wallet-adapter-base": "^0.0.5"
   },
   "devDependencies": {
-    "@solana/web3.js": "^1.66.2",
-    "@dao-xyz/peerbit-crypto": "^0.0.14"
+    "@dao-xyz/peerbit-crypto": "^0.0.14",
+    "@solana/web3.js": "^1.66.2"
   },
   "gitHead": "0d2127419555412027e32c986c33cb0f6779b374"
 }

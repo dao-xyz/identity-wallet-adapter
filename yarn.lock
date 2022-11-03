@@ -1250,10 +1250,38 @@
     "@ethersproject/wallet" "^5.7.0"
     libsodium-wrappers "^0.7.10"
 
+"@dao-xyz/peerbit-crypto@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@dao-xyz/peerbit-crypto/-/peerbit-crypto-0.0.14.tgz#a265a487d7d0fc8f354c234ea8503b683d61cee9"
+  integrity sha512-20dlLf3++Xjo7Jk75txgPZ2Dhd4tqsTwmfXJxNXhGcdTPBxdvvQwOv0NaNgBb/RH3AFYZuSmfL6yN2F1+VclKg==
+  dependencies:
+    "@dao-xyz/borsh" "^3.4.2"
+    "@dao-xyz/peerbit-borsh-utils" "^0.0.8"
+    "@dao-xyz/peerbit-bpayload" "^0.0.19"
+    "@ethersproject/wallet" "^5.7.0"
+    libsodium-wrappers "^0.7.10"
+
 "@dao-xyz/peerbit-time@^0.0.17":
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/@dao-xyz/peerbit-time/-/peerbit-time-0.0.17.tgz#1b6353bd3f296aa477dcc05f91f6c25f7afb253e"
   integrity sha512-IAcXgTvvuB2sere0k5dM3nuZVgw9FAcrXjzn0FVHicfqTg25ldlsjRWCKA63LcfJscBpxucVhnq8GljNvzZ6UQ==
+
+"@dao-xyz/wallet-adapter-material-ui@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dao-xyz/wallet-adapter-material-ui/-/wallet-adapter-material-ui-0.0.4.tgz#ee8666a97935a303e15cccbd592091089a69ef61"
+  integrity sha512-eSgf+oBmjuJf5+Hj4FmwEkeCVsAug/AUv5RER9Uaiz11WnXztop3gPWdQHsFdwlG3pG43d8+iVTaOfd/Jku6DA==
+  dependencies:
+    "@dao-xyz/wallet-adapter-base" "^0.0.4"
+    "@dao-xyz/wallet-adapter-react" "^0.0.4"
+    "@mui/icons-material" "^5.8.4"
+    "@mui/material" "^5.8.4"
+
+"@dao-xyz/wallet-adapter-react@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dao-xyz/wallet-adapter-react/-/wallet-adapter-react-0.0.4.tgz#b37f8338715b10366c3d077fa0f7b3708b6a568a"
+  integrity sha512-YIJr/BmaSF5QdQgkSWYEVqDyHsk8UsGIvJWoOE2/E6NscP3t0B8UkBkTU8/FSPcBzeYbSr6WKN4Ior4T31ZANw==
+  dependencies:
+    "@dao-xyz/wallet-adapter-base" "^0.0.4"
 
 "@emotion/babel-plugin@^11.10.5":
   version "11.10.5"

@@ -1,6 +1,6 @@
 {
   "name": "@dao-xyz/wallet-adapter-wallets",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "dao.xyz",
   "repository": "https://github.com/dao-xyz/identity-wallet-adapter",
   "license": "Apache-2.0",
@@ -27,7 +27,7 @@
     "postbuild": "echo '{\"type\":\"commonjs\"}' | node ../../../node_modules/.bin/json > lib/cjs/package.json && echo '{\"type\":\"module\"} ' | node ../../../node_modules/.bin/json > lib/esm/package.json"
   },
   "dependencies": {
-    "@dao-xyz/wallet-adapter-metamask": "^0.0.7",
+    "@dao-xyz/wallet-adapter-metamask": "^0.0.8",
     "@dao-xyz/wallet-adapter-phantom": "^0.0.5"
   },
   "gitHead": "0d2127419555412027e32c986c33cb0f6779b374"

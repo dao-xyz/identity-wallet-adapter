@@ -5,4 +5,3 @@ lib
 keystore-test
 **/__tests__/**/tmp
 /tmp
-/packages/test-app/build
